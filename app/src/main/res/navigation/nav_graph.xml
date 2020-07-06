@@ -6,8 +6,21 @@
     app:startDestination="@id/alarmsFragment">
 
     <fragment
+        android:id="@+id/alarmDetailFragment"
+        android:name="cristache.georgian.cristian.androidcleanexample.alarmDetail.AlarmDetailFragment"
+        android:label="alarm_detail_fragment"
+        tools:layout="@layout/alarm_detail_fragment" >
+        <argument
+            android:name="alarmId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
         android:id="@+id/alarmsFragment"
         android:name="cristache.georgian.cristian.androidcleanexample.alarms.AlarmsFragment"
-        android:label="alarms_fragment"
-        tools:layout="@layout/alarms_fragment" />
+        android:label="AlarmsFragment" >
+        <action
+            android:id="@+id/action_alarmsFragment_to_alarmDetailFragment"
+            app:destination="@id/alarmDetailFragment" />
+    </fragment>
 </navigation>
