@@ -18,7 +18,8 @@
     <fragment
         android:id="@+id/alarmsFragment"
         android:name="cristache.georgian.cristian.androidcleanexample.alarms.AlarmsFragment"
-        android:label="AlarmsFragment" >
+        android:label="AlarmsFragment"
+        tools:layout="@layout/alarms_fragment">
         <action
             android:id="@+id/action_alarmsFragment_to_alarmDetailFragment"
             app:destination="@id/alarmDetailFragment" />
