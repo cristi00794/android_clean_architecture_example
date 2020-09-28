@@ -9,7 +9,9 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 
 import cristache.georgian.cristian.androidcleanexample.databinding.AlarmsFragmentBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class AlarmsFragment : Fragment() {
 
     private lateinit var viewDataBinding: AlarmsFragmentBinding

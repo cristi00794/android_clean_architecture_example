@@ -10,8 +10,10 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import cristache.georgian.cristian.androidcleanexample.R
+import dagger.hilt.android.AndroidEntryPoint
 
 
+@AndroidEntryPoint
 class AlarmsActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
